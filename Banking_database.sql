@@ -37,10 +37,10 @@ CREATE TABLE Customer (
 
 
 INSERT INTO Customer (id, account_no,branch_id, name, email_id, phone, password, DOB, address) VALUES
-(1, 1, 'Avinash','351313513513', 'avinash@gmail.com', 2147483647, 'pass1234', '1995-12-15', 'Gandhi nagar'),
+(1, 1, 'Avinash', 'avinash@gmail.com', 2147483647, 'pass1234', '1995-12-15', 'Gandhi nagar'),
 (2, 1 ,'Yadnyadeep', '351313513513',yadnya@gmail.com', 999999999, 'pass1234', '1998-12-15', 'Saraswati colony'),
 (3, 2 ,'Vrushabh','351313513513', 'vrushabhl@gmail.com', 2147483647, 'pass1234', '1995-12-15',  'Main road'),
-(4, 2 , 'Vivek','12', 'vivek@gmail.com', 2147483647, 'pass1234', '1992-12-10', 'Main raod'),
+(4, 2 , 'Vivek', 'vivek@gmail.com', 2147483647, 'pass1234', '1992-12-10', 'Main raod'),
 (5, 3 , 'Vinay', 'abc@gmail.com', 2147483647, 'pass1234', '1989-12-08', 'Maharashtra'),
 (6, 3 , 'xyz', 'xyz@gmail.com', 2147483647, 'pass1234', '1989-02-15', 'Maharashtra'),
 (7, 4 ,'akash', 'akash@gmail.com', 123456789, 'pass1234', '1989-02-15', 'Maharshtra'),
