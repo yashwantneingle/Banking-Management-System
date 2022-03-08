@@ -57,27 +57,23 @@ CREATE TABLE Ministatement (
   paymnent_date date NOT NULL,
   transaction_id int(14) NOT NULL,
   Amount decimal(10,2) NOT NULL,
-  Total decimal(10,2) NOT NULL,
   transaction_type varchar(10) NOT NULL,
   opening decimal(10,2) NOT NULL,
-  debited decimal NOT NULL,
-  credited decimal NOT NULL,
-  closing decimal NOT NULL,
   PRIMARY KEY (Account_no , transaction_id , payment_date));
 
 
 
-INSERT INTO Ministatement (id, branch_id,payment_date, Amount,Total, bill_date, due_date) VALUES
-(1, 1, 12, '24.00', '2021-12-01', '2014-12-31'),
-(2, 1, 200, '400.00', '2021-09-01', '2021-10-01'),
-(3, 2, 986, '6760.00', '2021-10-01', '2021-10-31'),
-(4, 2, 657, '3470.00', '2021-10-01', '2021-10-31'),
-(5, 3, 546, '2360.00', '2021-10-01', '2021-10-31'),
-(6, 3, 699, '3890.00', '2021-10-01', '2021-10-31'),
-(7, 4, 643, '3330.00', '2021-11-01', '2021-12-01'),
-(757, 4, 781, '4710.00', '2021-11-01', '2021-12-01'),
-(7, 5, 790, '4720.00', '2021-11-01', '2021-12-01'),
-(75, 5, 800, '5000.00', '2020-11-01', '2020-12-01');
+INSERT INTO Ministatement (Account_no, branch_id,payment_date, Amount, transaction_type,opening) VALUES
+(1, 1, '2021-12-01', 2545,'credited',3654354,31315),
+(2, 1,  '2021-09-01', 23554,'debited'),
+(3, 2, '2021-10-01', 846,'2021-10-31','debited'),
+(4, 2, '2021-10-01', 65464,'2021-10-31','credited'),
+(5, 3, '2021-10-01', 54534,'2021-10-31','debited'),
+(6, 3, '2021-10-01', 6544,'2021-10-31','debited'),
+(7, 4, '2021-11-01', 354,'2021-12-01','credited'),
+(757, 4,'2021-11-01', 3645,'2021-12-01','debited'),
+(7, 5,  '2021-11-01', 321,'2021-12-01','credited'),
+(75, 5,  '2020-11-01', 354,'2020-12-01','credited');
 
 
 
