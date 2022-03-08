@@ -37,16 +37,16 @@ CREATE TABLE Customer (
 
 
 INSERT INTO Customer (id, account_no,branch_id, name, email_id, phone, password, DOB, address) VALUES
-(1, 1, 'Avinash', 'avinash@gmail.com', 2147483647, 'pass1234', '1995-12-15', 'Gandhi nagar'),
-(2, 1 ,'Yadnyadeep', '351313513513',yadnya@gmail.com', 999999999, 'pass1234', '1998-12-15', 'Saraswati colony'),
-(3, 2 ,'Vrushabh','351313513513', 'vrushabhl@gmail.com', 2147483647, 'pass1234', '1995-12-15',  'Main road'),
-(4, 2 , 'Vivek', 'vivek@gmail.com', 2147483647, 'pass1234', '1992-12-10', 'Main raod'),
-(5, 3 , 'Vinay', 'abc@gmail.com', 2147483647, 'pass1234', '1989-12-08', 'Maharashtra'),
-(6, 3 , 'xyz', 'xyz@gmail.com', 2147483647, 'pass1234', '1989-02-15', 'Maharashtra'),
-(7, 4 ,'akash', 'akash@gmail.com', 123456789, 'pass1234', '1989-02-15', 'Maharshtra'),
-(757, 4 ,'Rahul', 'rahul@gmail.com', 123456789, 'pass1234', '1989-12-15', 'India'),
-(7, 5 ,'Ram', 'ram@gmail.com', 123456789, 'pass1234', '1996-01-15',  'Maharastra'),
-(75, 5 ,'Yashwant', 'yashwant@gmail.com', 123456789, 'pass1234', '1989-01-15',  'Maharashtra');
+(1,'351313513513', 1, 'Avinash', 'avinash@gmail.com', 2147483647, 'pass1234', '1995-12-15', 'Gandhi nagar'),
+(2,'351313513513', 1 ,'Yadnyadeep','yadnya@gmail.com', 999999999, 'pass1234', '1998-12-15', 'Saraswati colony'),
+(3,'351313513513', 2 ,'Vrushabh', 'vrushabhl@gmail.com', 2147483647, 'pass1234', '1995-12-15',  'Main road'),
+(4, '351313513513',2 , 'Vivek', 'vivek@gmail.com', 2147483647, 'pass1234', '1992-12-10', 'Main raod'),
+(5, '351313513513',3 , 'Vinay', 'abc@gmail.com', 2147483647, 'pass1234', '1989-12-08', 'Maharashtra'),
+(6,'351313513513', 3 , 'xyz', 'xyz@gmail.com', 2147483647, 'pass1234', '1989-02-15', 'Maharashtra'),
+(7, '351313513513',4 ,'akash', 'akash@gmail.com', 123456789, 'pass1234', '1989-02-15', 'Maharshtra'),
+(757, '351313513513',4 ,'Rahul', 'rahul@gmail.com', 123456789, 'pass1234', '1989-12-15', 'India'),
+(7,'351313513513', 5 ,'Ram', 'ram@gmail.com', 123456789, 'pass1234', '1996-01-15',  'Maharastra'),
+(75,'351313513513', 5 ,'Yashwant', 'yashwant@gmail.com', 123456789, 'pass1234', '1989-01-15',  'Maharashtra');
 
 
 
