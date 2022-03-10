@@ -1,8 +1,6 @@
 show databases;
 create database Banking;
 USE Banking;
-
-
 CREATE TABLE Admin (
   id int(14) NOT NULL,
   branch_id int(14) NOT NULL,
@@ -33,7 +31,7 @@ CREATE TABLE Customer (
   DOB date NOT NULL,
   Balance decimal(10,2) NOT NULL,
   address varchar(100) NOT NULL,
-  PRIMARY KEY (id , Board_id)
+  PRIMARY KEY (id , Branch_id)
 );
 
 
@@ -66,7 +64,7 @@ CREATE TABLE Ministatement (
 
 INSERT INTO Ministatement (Account_no, branch_id,payment_date, transaction_id, Amount, transaction_type,opening) VALUES
 ('351313513513',1,'2021-12-01',3535135153,'1000.00',"credited",'12000.00')
-('351313513513',1,'2021-12-05',3535185153,'1200.00',"credited",'13000.00')
+('351313513513',1,'2021-10-05',3435185153,'1200.00',"credited",'13000.00')
 ('351313513513',1,'2022-01-01',3535175153,'1200.00',"credited",'14000.00');
 
 
@@ -76,7 +74,7 @@ CREATE TABLE query (
   branch_id int(14) NOT NULL,
   complaint varchar(140) NOT NULL,
   response varchar(40) NOT NULL,
-  PRIMARY KEY (id , Board_id));
+  PRIMARY KEY (id , Branch_id));
 
 
 
@@ -94,7 +92,7 @@ CREATE TABLE transaction (
   Payable_amount decimal(10,2) NOT NULL,
   Pay_date date NOT NULL,
   status varchar(20) NOT NULL,
-  PRIMARY KEY (id , Board_id , Pay_date));
+  PRIMARY KEY (id , Branch_id , Pay_date));
 
 
 
@@ -116,7 +114,7 @@ CREATE TABLE Employee (
   email_id varchar(40) NOT NULL,
   phone int(15) NOT NULL,
   password varchar(20) NOT NULL,
-  PRIMARY KEY (id , Board_id));
+  PRIMARY KEY (id , Branch_id));
 
 
 
